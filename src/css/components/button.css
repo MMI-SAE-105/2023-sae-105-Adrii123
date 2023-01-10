@@ -1,0 +1,13 @@
+.button_shop {
+    color: var(--noir);
+    height: 35px;
+    width: 241px;
+    z-index: 1;
+}
+
+.button_shop1 {
+    text-align: center;
+    border: 2px;
+    border-top: 1px;
+    border-color: black;
+}
