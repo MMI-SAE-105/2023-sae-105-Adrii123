@@ -1,6 +1,6 @@
 .img_Accueil {
     max-width: 100%;
-    /* width: 325px; */
+    z-index: -1;
 }
 
 .img_Accueil1 {
