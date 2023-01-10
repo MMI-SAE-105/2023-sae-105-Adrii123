@@ -1,0 +1,40 @@
+.info_Accueil {
+    font-family: var(--font-family);
+    font-size: var(--corps-de-page);
+    font-weight: 200;
+    position: absolute;
+    z-index: -1;
+}
+
+.info_Accueil1 {
+    margin: 285px 57% 0px 5.5%;
+}
+
+.info_Accueil2 {
+    text-align: center;
+    margin: 480px 5.5% 0px 57.6%;
+}
+
+.définition {
+    padding-top: 626px;
+
+}
+
+.intertitre_Page {
+    margin: 0px 5.5% 15px 5.5%;
+    font-family: var(--font-family);
+    font-size: var(--titres---intertitres);
+    font-weight: 300;
+}
+
+.corps_Page {
+    margin: 0px 5.5% 50px 5.5%;
+    font-family: var(--font-family);
+    font-size: var(--corps-de-page);
+    font-weight: 200;
+}
+
+.tarifs_Item {
+    display: flex;
+    justify-content: space-between;
+}
