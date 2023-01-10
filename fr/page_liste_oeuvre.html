@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html x-data="{ isOpen:false }" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des oeuvres - Expo EcoArt</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/leaf_svg.svg">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="header_logoLink" href="/fr/index.html">
+                <h1 class="header_title">Expo <span class="header_title header_title2">eco-</span>art</h1>
+                <img class="header_logo" src="/public/img/leaf_svg.svg" alt="Logo feuille d'arbre">
+            </a>
+            <img @click="isOpen = ! isOpen" class="header_MenuBtn" src="/public/img/menu.svg" alt="Logo Menu">
+        </div>
+        <nav class="header_Menu" x-show="isOpen">
+            <ul class="menu_List">
+                <li class="menu_Item">
+                    <a href="#" class="item_Link">collection</a>
+                </li>
+                <li class="menu_Item">
+                    <a href="#" class="item_Link">artistes</a>
+                </li>
+                <li class="menu_Item">
+                    <a href="#" class="item_Link">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h3 class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ollection</h3>
+        <h3 class="intertitre_Page4">Mycelium Running</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/mycelium_Running.jpeg" alt="Mycelium Running">
+        <h3 class="intertitre_Page4">Destruction</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/Destruction.jpeg" alt="Destruction">
+        <h3 class="intertitre_Page4">Sieben Anrufungen</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/sieben_Anrufungen.jpeg" alt="Sieben Anrufungen">
+        <h3 class="intertitre_Page4">Österreich - Tisch</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/Österreich_Tisch.jpeg" alt="Österreich - Tisch">
+        <h3 class="intertitre_Page4">A Circle in Alaska</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/a_Circle_in_Alaska.jpeg" alt="A Circle in Alaska">
+        <h3 class="intertitre_Page4">A Square of Ground</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/a_Square_Of_Ground.jpeg" alt="A Square of Ground">
+        <h3 class="intertitre_Page4">Continuerà a Crescere Tranne Che in Quel Punto</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/Continuerà_a_Crescere_Tranne_Che_in_Quel_Punto.jpeg" alt="Continuerà a Crescere Tranne Che in Quel Punto">
+        <h3 class="intertitre_Page4">Elevazione</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/Elevazione.jpeg" alt="Elevazione">
+        
+        <footer class="footer">
+            <p class="corps_Page-footer corps_Page-footer1">© Expo eco-art</p>
+            <p class="corps_Page-footer corps_Page-footer2">“Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de montbeliard”.</p>
+            <p class="corps_Page-footer corps_Page-footer3">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </footer>
+    </main>
+</body>
+</html>
