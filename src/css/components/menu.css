@@ -13,4 +13,6 @@
 
 .menu_List li a {
     text-decoration: none;
+    color: var(--noir);
 }
+
