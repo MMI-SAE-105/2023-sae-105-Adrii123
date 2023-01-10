@@ -1,0 +1,16 @@
+.header_Menu {
+    position: absolute;
+    background-color: var(--blanc);
+    inset: 67px 70px 0 0;
+}
+
+.menu_List {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+}
+
+.menu_List li a {
+    text-decoration: none;
+}
