@@ -1,0 +1,16 @@
+:root {
+    /* Color styles */
+--vert: rgba(0, 100, 0, 0.25);
+--marron: rgba(150, 113, 23, 0.25);
+--noir: rgba(0, 0, 0, 1);
+--blanc: rgba(255, 255, 255, 1);
+
+/* Text-size styles */
+--corps-de-page: 19px;
+--description-doeuvre: 15px;
+--titres---intertitres: 19px;
+
+/* Typography */
+--font-family: 'Inter', sans-serif;
+
+}
