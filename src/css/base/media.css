@@ -30,3 +30,18 @@
     max-width: 100%;
     width: 325px;
 }
+
+.img_PageArtiste {
+    width: 38.5%;
+    margin: 117px 30.5% 50px 30.5%;
+}
+
+.oeuvres_PageArtiste {
+    width: 86.6%;
+    margin: 0px 5.5% 0px 5.5%;
+}
+
+.oeuvres_PageOeuvre {
+    width: 86.6%;
+    margin: 0px 5.5% 25px 5.5%;
+}
