@@ -9,7 +9,8 @@
 .header_logo {
     position: absolute;
     top: 9px;
-    right: 120px;
+    left: 52.2%;
+    right: 32%;
 }
 
 .header_title {
