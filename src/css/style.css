@@ -15,6 +15,7 @@
 @import url(/src/css/components/menu.css);
 @import url(/src/css/components/button.css);
 @import url(/src/css/components/artist_file.css);
+@import url(/src/css/components/accueil.css);
 
 /* Layouts */
 @import url(/src/css/layout/footer.css);
