@@ -1,24 +1,24 @@
 .img_Accueil {
-    max-width: 100%;
+    max-width: 70%;
     z-index: -1;
 }
 
 .img_Accueil1 {
     position: absolute;
     margin: 107px auto 0px 5.5%;
-    width: 63%; 
+    width: 238.5px; 
 }
 
 .img_Accueil2 {
     position: absolute;
     margin: 187px auto 0 42.5%;
-    width: 50%;
+    height: 239px;
 }
 
 .img_Accueil3 {
     position: absolute;
     margin: 391px auto 0 5.5%;
-    width: 51.2%;
+    width: 191px;
 }
 
 .img_Caroussel-artistes {
