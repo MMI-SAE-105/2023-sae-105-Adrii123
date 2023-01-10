@@ -1,0 +1,19 @@
+.description_Oeuvre {
+    font-family: var(--font-family);
+    font-size: var(--description-doeuvre);
+    font-style: italic;
+    font-weight: 300;
+    margin: 5px 5.5% 25px 5.5%;
+}
+
+.intertitre_Page1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intertitre_Page3 {
+    margin: 117px 5.5% 50px 5.5%;
+    font-family: var(--font-family);
+    font-size: var(--titres---intertitres);
+    font-weight: 300;
+}
