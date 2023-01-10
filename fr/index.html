@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html x-data="{ isOpen:false }" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +10,15 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
-    <header class="header">
-        <a class="header_logoLink" href="/fr/index.html">
-            <h1 class="header_title">Expo eco-art</h1>
-            <img class="header_logo" src="/public/img/leaf_svg.svg" alt="Logo feuille d'arbre">
-        </a>
-        <img class="header_MenuBtn" src="/public/img/menu.svg" alt="Logo Menu">
-        <nav class="header_Menu">
+    <header>
+        <div class="header">
+            <a class="header_logoLink" href="/fr/index.html">
+                <h1 class="header_title">Expo <span class="header_title header_title2">eco-</span>art</h1>
+                <img class="header_logo" src="/public/img/leaf_svg.svg" alt="Logo feuille d'arbre">
+            </a>
+            <img @click="isOpen = ! isOpen" class="header_MenuBtn" src="/public/img/menu.svg" alt="Logo Menu">
+        </div>
+        <nav class="header_Menu" x-show="isOpen">
             <ul class="menu_List">
                 <li class="menu_Item">
                     <a href="#" class="item_Link">collection</a>
@@ -116,7 +118,7 @@
 
         <section class="oeuvres">
             <h3 class="intertitre_Page">Les oeuvres :</h3>
-            <img class="img_Caroussel-oeuvres "src="/public/img/sieben_Anrufungen.jpeg" alt="Sieben Anrufugen">
+            <img class="img_Caroussel-oeuvres"src="/public/img/sieben_Anrufungen.jpeg" alt="Sieben Anrufugen">
             <img class="img_Caroussel-oeuvres" src="/public/img/Österreich_Tisch.jpeg" alt="Osterreich Tisch">
             <img class="img_Caroussel-oeuvres" src="/public/img/mycelium_Running.jpeg" alt="mycelium_Running">
             <img class="img_Caroussel-oeuvres" src="/public/img/Elevazione.jpeg" alt="Elevazione">
