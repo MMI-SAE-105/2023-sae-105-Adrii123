@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ isOpen:false }" :class="isOpen && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl Prantl - Expo EcoArt</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/leaf_svg.svg">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="header_logoLink" href="/fr/index.html">
+                <h1 class="header_title">Expo <span class="header_title header_title2">eco-</span>art</h1>
+                <img class="header_logo" src="/public/img/leaf_svg.svg" alt="Logo feuille d'arbre">
+            </a>
+            <img @click="isOpen = ! isOpen" class="header_MenuBtn" src="/public/img/menu.svg" alt="Logo Menu">
+        </div>
+        <nav class="header_Menu" x-show="isOpen" x-transition.duration.800ms>
+            <ul class="menu_List">
+                <li class="menu_Item">
+                    <a href="/fr/page_liste_oeuvre.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ollection</a>
+                </li>
+                <li class="menu_Item">
+                    <a href="/fr/page_frise_artiste.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">A</span>rtistes</a>
+                </li>
+                <li class="menu_Item">
+                    <a href="/fr/page_contact.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ontact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <img class="img_PageArtiste" src="/public/img/Karl_Prantl_crop.webp" alt="Portait de Giuseppe Penone">
+        <h3 class="intertitre_Page intertitre_Page1">Karl Prantl</h3>
+        <h3 class="intertitre_Page">Biographie</h3>
+        <p class="corps_Page">Karl Prantl est un botaniste et phytochimiste autrichien, né en 1928 et décédé en 2010. Il a étudié la botanique à l'Université de Vienne, et a ensuite enseigné et effectué des recherches à cette université pendant toute sa carrière. Il était surtout connu pour ses travaux sur les plantes carnivores, la biochimie des flavonoïdes et la classification des plantes. Il a écrit de nombreux articles et livres sur ces sujets, et a été l'un des principaux spécialistes de ces domaines.</p>
+        <h3 class="intertitre_Page">Oeuvres de Karl Prantl</h3>
+        <a href="/fr/oeuvres/Österreich_Tisch.html">
+            <img class="oeuvres_PageArtiste" src="/public/img/Österreich_Tisch.jpeg" alt="Osterreich Tisch">
+            <p class="description_Oeuvre">Osterreich Tisch</p>
+        </a>
+        <a href="/fr/oeuvres/sieben_Anrufungen.html">
+            <img class="oeuvres_PageArtiste" src="/public/img/sieben_Anrufungen.jpeg" alt="Sieben Anrufungen">
+            <p class="description_Oeuvre">Sieben Anrufungen</p>
+        </a>
+
+        <footer class="footer">
+            <p class="corps_Page-footer corps_Page-footer1">© Expo eco-art</p>
+            <p class="corps_Page-footer corps_Page-footer2">“Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de montbeliard”.</p>
+            <p class="corps_Page-footer corps_Page-footer3">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </footer>
+    </main>
+</body>
+</html>
