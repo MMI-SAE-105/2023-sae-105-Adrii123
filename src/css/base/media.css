@@ -45,3 +45,14 @@
     width: 86.6%;
     margin: 0px 5.5% 25px 5.5%;
 }
+
+.image_artiste_frise {
+    width: 38.5%;
+    margin: 25px 30.5% 20px 30.5%;
+}
+
+.fleche {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
