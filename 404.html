@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erreur 404</title>
+    <title>Redirect</title>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <h1>Il n'y a rien ici</h1>
-    <p>Il semble que vous aillez fait une erreur</p>
+    <main>
+        <p>Il n'y a rien ici</p>
+        <p>Il semble que vous aillez fait une erreur</p>
+        <img src="/public/img/leaf_svg.svg" alt="Logo feuille d'arbre">
+    </main>
 </body>
 
 <style>
+    a {
+        text-decoration: none;
+    }
+
     body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: #f5f5f5;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
-    }
-    h1 {
-        font-size: 3rem;
-        font-weight: 600;
-        color: var(--noir);
         font-family: var(--font-family);
-    }
-    p {
-        font-size: 1.5rem;
         font-weight: 200;
-        color: var(--noir);
-        font-family: var(--font-family);
+        font-size: 1.4rem;
     }
+
 </style>
 </html>
