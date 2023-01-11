@@ -55,23 +55,13 @@
 
             <h3 class="intertitre_Page">Tarifs :</h3>
             <h3 class="intertitre_Page">Entrées payantes</h3>
-            <ul class="tarifs_List">
-                <li class="tarifs_Item">
-                    <p class="corps_Page">Plein tarif</p>
-                    <p class="corps_Page">11€</p>
-                </li>
-                <li class="tarifs_Item">
-                    <p class="corps_Page">Tarif réduit</p>
-                    <p class="corps_Page">7.50€</p>
-                </li>
-                <li class="tarifs_Item">
-                    <p class="corps_Page">Réduction 13-25 ans</p>
-                    <p class="corps_Page">5€</p>
-                </li>
-                <li class="tarifs_Item">
-                    <p class="corps_Page">Fondation Cartier Pass</p>
-                    <p class="corps_Page">18-50€</p>
-                </li>
+            <ul class="tarifs_List" x-data="{ data: {} }" x-init="fetch('../src/data.json').then(response => response.json()).then(json => data = json)">
+                <template x-for="obj of data">
+                    <li class="tarifs_Item">
+                        <p class="corps_Page" x-text="obj.name">name</p>
+                        <p class="corps_Page" x-text="obj.price">price</p>
+                    </li>
+                </template>
             </ul>
 
             <h3 class="intertitre_Page">Entrées gratuites</h3>
