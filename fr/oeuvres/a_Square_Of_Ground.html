@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ isOpen:false }" :class="isOpen && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A square of ground - Expo EcoArt</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/leaf_svg.svg">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="header_logoLink" href="/fr/index.html">
+                <h1 class="header_title">Expo <span class="header_title header_title2">eco-</span>art</h1>
+                <img class="header_logo" src="/public/img/leaf_svg.svg" alt="Logo feuille d'arbre">
+            </a>
+            <img @click="isOpen = ! isOpen" class="header_MenuBtn" src="/public/img/menu.svg" alt="Logo Menu">
+        </div>
+        <nav class="header_Menu" x-show="isOpen" x-transition.duration.800ms>
+            <ul class="menu_List">
+                <li class="menu_Item">
+                    <a href="/fr/page_liste_oeuvre.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ollection</a>
+                </li>
+                <li class="menu_Item">
+                    <a href="/fr/page_frise_artiste.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">A</span>rtistes</a>
+                </li>
+                <li class="menu_Item">
+                    <a href="/fr/page_contact.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ontact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        
+        <h3 class="intertitre_Page3">A square of ground</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/a_Square_Of_Ground.jpeg" alt="A square of ground">
+        <p class="corps_Page">"A Square of Ground" est une oeuvre de l'artiste britannique Richard Long qui a été créée en 1966. Il s'agit d'une installation minimaliste et conceptuelle qui consiste en un simple carré de terre nue sur le sol d'une galerie d'art. L'oeuvre met en avant l'importance de la nature et de l'environnement, et souligne la simplicité et l'essence de l'art en utilisant des éléments naturels trouvés comme matériau. Elle a eu une grande influence sur les artistes Land art.</p>
+    
+        <footer class="footer">
+            <p class="corps_Page-footer corps_Page-footer1">© Expo eco-art</p>
+            <p class="corps_Page-footer corps_Page-footer2">“Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de montbeliard”.</p>
+            <p class="corps_Page-footer corps_Page-footer3">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </footer>
+    </main>
+</body>
+</html>
