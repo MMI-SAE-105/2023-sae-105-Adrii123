@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ isOpen:false }" :class="isOpen && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A circle in Alaska - Expo EcoArt</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="/public/img/leaf_svg.svg">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="header_logoLink" href="/fr/index.html">
+                <h1 class="header_title">Expo <span class="header_title header_title2">eco-</span>art</h1>
+                <img class="header_logo" src="/public/img/leaf_svg.svg" alt="Logo feuille d'arbre">
+            </a>
+            <img @click="isOpen = ! isOpen" class="header_MenuBtn" src="/public/img/menu.svg" alt="Logo Menu">
+        </div>
+        <nav class="header_Menu" x-show="isOpen" x-transition.duration.800ms>
+            <ul class="menu_List">
+                <li class="menu_Item">
+                    <a href="/fr/page_liste_oeuvre.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ollection</a>
+                </li>
+                <li class="menu_Item">
+                    <a href="/fr/page_frise_artiste.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">A</span>rtistes</a>
+                </li>
+                <li class="menu_Item">
+                    <a href="/fr/page_contact.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ontact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        
+        <h3 class="intertitre_Page3">A circle in Alaska</h3>
+        <img class="oeuvres_PageOeuvre" src="/public/img/a_Circle_in_Alaska.jpeg" alt="Oeuvre de Giuseppe Penone : Continuerà a Crescere Tranne Che in Quel Punto">
+        <p class="corps_Page">"A Circle in Alaska" est une installation de l'artiste britannique Richard Long. Elle est créée en 1971. Cette oeuvre consiste en un cercle de pierres alignées sur le sol de l'Alaska, créé lors d'une de ses randonnées dans la région. Le cercle est réalisé avec des pierres trouvées sur place, choisies pour leur forme et leur couleur, disposées de façon à créer un motif harmonieux. En créant cette œuvre, Long a voulu souligner l'importance de l'environnement naturel et la relation entre l'homme et la nature. Le cercle symbolise l'unité, l'harmonie et la perfection dans la nature. Il joue également avec l'idée de marquer un espace, de le rendre plus visible, ajoutant une dimension symbolique à la composition.</p>
+    
+        <footer class="footer">
+            <p class="corps_Page-footer corps_Page-footer1">© Expo eco-art</p>
+            <p class="corps_Page-footer corps_Page-footer2">“Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de montbeliard”.</p>
+            <p class="corps_Page-footer corps_Page-footer3">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </footer>
+    </main>
+</body>
+</html>
