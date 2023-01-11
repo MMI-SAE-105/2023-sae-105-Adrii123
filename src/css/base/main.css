@@ -61,6 +61,22 @@
     z-index: 1;
 }
 
+.titre_page-oeuvre4 {
+    text-align: center;
+    margin: 0px 5.5% 20px 5.5%;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.titre_page-oeuvre5 {
+    text-align: center;
+    margin: 0px 5.5% 20px 5.5%;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 19px;
+}
+
 
 
 #last-name {
@@ -118,3 +134,4 @@
 .noScroll body {
     overflow: hidden;
 }
+
