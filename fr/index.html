@@ -18,13 +18,13 @@
             </a>
             <img @click="isOpen = ! isOpen" class="header_MenuBtn" src="/public/img/menu.svg" alt="Logo Menu">
         </div>
-        <nav class="header_Menu" x-show="isOpen">
+        <nav class="header_Menu" x-show="isOpen" x-transition.duration.800ms>
             <ul class="menu_List">
                 <li class="menu_Item">
                     <a href="/fr/page_liste_oeuvre.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ollection</a>
                 </li>
                 <li class="menu_Item">
-                    <a href="#" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">A</span>rtistes</a>
+                    <a href="/fr/page_frise_artiste.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">A</span>rtistes</a>
                 </li>
                 <li class="menu_Item">
                     <a href="/fr/page_contact.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ontact</a>
