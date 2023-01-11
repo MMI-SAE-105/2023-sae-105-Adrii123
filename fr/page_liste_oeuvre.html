@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html x-data="{ isOpen:false }" lang="en">
+<html lang="en" x-data="{ isOpen:false }" :class="isOpen && 'noScroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des oeuvres - Expo EcoArt</title>
+    <title>Collection - Expo EcoArt</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/public/img/leaf_svg.svg">
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -18,16 +18,16 @@
             </a>
             <img @click="isOpen = ! isOpen" class="header_MenuBtn" src="/public/img/menu.svg" alt="Logo Menu">
         </div>
-        <nav class="header_Menu" x-show="isOpen">
+        <nav class="header_Menu" x-show="isOpen" x-transition.duration.800ms>
             <ul class="menu_List">
                 <li class="menu_Item">
-                    <a href="#" class="item_Link">collection</a>
+                    <a href="/fr/page_liste_oeuvre.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ollection</a>
                 </li>
                 <li class="menu_Item">
-                    <a href="#" class="item_Link">artistes</a>
+                    <a href="/fr/page_frise_artiste.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">A</span>rtistes</a>
                 </li>
                 <li class="menu_Item">
-                    <a href="#" class="item_Link">contact</a>
+                    <a href="/fr/page_contact.html" class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ontact</a>
                 </li>
             </ul>
         </nav>
@@ -35,22 +35,38 @@
 
     <main class="main">
         <h3 class="titre_page-oeuvre"><span class="titre_page-oeuvre2">C</span>ollection</h3>
-        <h3 class="intertitre_Page4">Mycelium Running</h3>
-        <img class="oeuvres_PageOeuvre" src="/public/img/mycelium_Running.jpeg" alt="Mycelium Running">
-        <h3 class="intertitre_Page4">Destruction</h3>
-        <img class="oeuvres_PageOeuvre" src="/public/img/Destruction.jpeg" alt="Destruction">
-        <h3 class="intertitre_Page4">Sieben Anrufungen</h3>
-        <img class="oeuvres_PageOeuvre" src="/public/img/sieben_Anrufungen.jpeg" alt="Sieben Anrufungen">
-        <h3 class="intertitre_Page4">Österreich - Tisch</h3>
-        <img class="oeuvres_PageOeuvre" src="/public/img/Österreich_Tisch.jpeg" alt="Österreich - Tisch">
-        <h3 class="intertitre_Page4">A Circle in Alaska</h3>
-        <img class="oeuvres_PageOeuvre" src="/public/img/a_Circle_in_Alaska.jpeg" alt="A Circle in Alaska">
-        <h3 class="intertitre_Page4">A Square of Ground</h3>
-        <img class="oeuvres_PageOeuvre" src="/public/img/a_Square_Of_Ground.jpeg" alt="A Square of Ground">
-        <h3 class="intertitre_Page4">Continuerà a Crescere Tranne Che in Quel Punto</h3>
-        <img class="oeuvres_PageOeuvre" src="/public/img/Continuerà_a_Crescere_Tranne_Che_in_Quel_Punto.jpeg" alt="Continuerà a Crescere Tranne Che in Quel Punto">
-        <h3 class="intertitre_Page4">Elevazione</h3>
-        <img class="oeuvres_PageOeuvre" src="/public/img/Elevazione.jpeg" alt="Elevazione">
+        <a href="/fr/oeuvres/mycelium_Running.html">
+            <h3 class="intertitre_Page4">Mycelium Running</h3>
+            <img class="oeuvres_PageOeuvre" src="/public/img/mycelium_Running.jpeg" alt="Mycelium Running">
+        </a>
+        <a href="/fr/oeuvres/Destruction.html">
+            <h3 class="intertitre_Page4">Destruction</h3>
+            <img class="oeuvres_PageOeuvre" src="/public/img/Destruction.jpeg" alt="Destruction">
+        </a>
+        <a href="/fr/oeuvres/sieben_Anrufungen.html">
+            <h3 class="intertitre_Page4">Sieben Anrufungen</h3>
+            <img class="oeuvres_PageOeuvre" src="/public/img/sieben_Anrufungen.jpeg" alt="Sieben Anrufungen">
+        </a>
+        <a href="/fr/oeuvres/Österreich_Tisch.html">
+            <h3 class="intertitre_Page4">Österreich - Tisch</h3>
+            <img class="oeuvres_PageOeuvre" src="/public/img/Österreich_Tisch.jpeg" alt="Österreich - Tisch">
+        </a>
+        <a href="/fr/oeuvres/a_Circle_in_Alaska.html">
+            <h3 class="intertitre_Page4">A Circle in Alaska</h3>
+            <img class="oeuvres_PageOeuvre" src="/public/img/a_Circle_in_Alaska.jpeg" alt="A Circle in Alaska">
+        </a>
+        <a href="/fr/oeuvres/a_Square_Of_Ground.html">
+            <h3 class="intertitre_Page4">A Square of Ground</h3>
+            <img class="oeuvres_PageOeuvre" src="/public/img/a_Square_Of_Ground.jpeg" alt="A Square of Ground">
+        </a>
+        <a href="/fr/oeuvres/Continuerà.html">
+            <h3 class="intertitre_Page4">Continuerà a Crescere Tranne Che in Quel Punto</h3>
+            <img class="oeuvres_PageOeuvre" src="/public/img/Continuerà_a_Crescere_Tranne_Che_in_Quel_Punto.jpeg" alt="Continuerà a Crescere Tranne Che in Quel Punto">
+        </a>
+        <a href="/fr/oeuvres/Elevazione.html">
+            <h3 class="intertitre_Page4">Elevazione</h3>
+            <img class="oeuvres_PageOeuvre" src="/public/img/Elevazione.jpeg" alt="Elevazione">
+        </a>
         
         <footer class="footer">
             <p class="corps_Page-footer corps_Page-footer1">© Expo eco-art</p>
