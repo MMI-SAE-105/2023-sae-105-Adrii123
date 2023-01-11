@@ -106,29 +106,122 @@
 
         <section class="artistes">
             <h3 class="intertitre_Page">Les Artistes :</h3>
-            <img class="img_Caroussel-artistes" src="/public/img/Richard_Long.jpeg" alt="Richard Long">
-            <img class="img_Caroussel-artistes" src="/public/img/Zahrah_Al-Ghamdi.jpeg" alt="Zahrah Al-Ghamdi">
-            <img class="img_Caroussel-artistes" src="/public/img/Karl_Prantl.jpeg" alt="Karl Prantl">
-            <img class="img_Caroussel-artistes" src="/public/img/Giuseppe_Penone.jpeg" alt="Giuseppe Penone">
             
-            <a href="#" class="button_artistes">
-                <p class="corps_Page">Voir en détail</p>
-            </a>
+            <carrousel x-data="{hrefCourant: '#ecran-1'}">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant"
+                    aria-label="slide précedant">
+                    <</button><button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class=" carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+                        <div class="carrousel_parent-ecrans" x-ref="parent"
+                            @scroll.debounce.250ms.passive="
+        hrefCourant = '#'+
+                          [...$refs.parent.children]
+                           .find(e=>e.getBoundingClientRect().x>=0)
+                           .id
+                                             ">
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <a href="/fr/artistes/Penone.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/Giuseppe_Penone.jpeg" alt="image ecran 1">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <a href="/fr/artistes/Karl_Prantl.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/Karl_Prantl.jpeg" alt="image ecran 2">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <a href="/fr/artistes/Zahrah-Al-Ghamdi.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/Zahrah_Al-Ghamdi.jpeg" alt="image ecran 3">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-4" class="carrousel_ecran">
+                                <a href="/fr/artistes/Richard_Long.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/Richard_Long.jpeg" alt="image ecran 4">
+                                    </figure>
+                                </a>
+                            </div>
+                            
+                        </div>
+            </carrousel>
         </section>
 
         <section class="oeuvres">
             <h3 class="intertitre_Page">Les oeuvres :</h3>
-            <img class="img_Caroussel-oeuvres"src="/public/img/sieben_Anrufungen.jpeg" alt="Sieben Anrufugen">
-            <img class="img_Caroussel-oeuvres" src="/public/img/Österreich_Tisch.jpeg" alt="Osterreich Tisch">
-            <img class="img_Caroussel-oeuvres" src="/public/img/mycelium_Running.jpeg" alt="mycelium_Running">
-            <img class="img_Caroussel-oeuvres" src="/public/img/Elevazione.jpeg" alt="Elevazione">
-            <img class="img_Caroussel-oeuvres" src="/public/img/Destruction.jpeg" alt="Destruction">
-            <img class="img_Caroussel-oeuvres" src="/public/img/Continuerà_a_Crescere_Tranne_Che_in_Quel_Punto.jpeg" alt="Continuerà a Crescere Tranne Che in Quel Punto">
-            <img class="img_Caroussel-oeuvres" src="/public/img/a_Square_Of_Ground.jpeg" alt="a Square Of Ground">
-            <img class="img_Caroussel-oeuvres" src="/public/img/a_Circle_in_Alaska.jpeg" alt="a Circle in Alaska">
-            <a href="#" class="button_oeuvres">
-                <p class="corps_Page">Voir en détail</p>
-            </a>
+            <carrousel x-data="{hrefCourant: '#ecran-1'}">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant1"
+                    aria-label="slide précedant">
+                    <</button><button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class=" carrousel_btn carrousel_btn-apres1" aria-label="slide suivant">></button>
+                        <div class="carrousel_parent-ecrans" x-ref="parent"
+                            @scroll.debounce.250ms.passive="
+        hrefCourant = '#'+
+                          [...$refs.parent.children]
+                           .find(e=>e.getBoundingClientRect().x>=0)
+                           .id
+                                             ">
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <a href="/fr/oeuvres/a_Circle_in_Alaska.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/a_Circle_in_Alaska.jpeg" alt="image ecran 1">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <a href="/fr/oeuvres/a_Square_Of_Ground.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/a_Square_Of_Ground.jpeg" alt="image ecran 2">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <a href="/fr/oeuvres/Continuerà.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/Continuerà_a_Crescere_Tranne_Che_in_Quel_Punto.jpeg" alt="image ecran 3">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-4" class="carrousel_ecran">
+                                <a href="/fr/oeuvres/Destruction.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/Destruction.jpeg" alt="image ecran 4">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-5" class="carrousel_ecran">
+                                <a href="/fr/oeuvres/Elevazione.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/Elevazione.jpeg" alt="image ecran 4">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-6" class="carrousel_ecran">
+                                <a href="/fr/oeuvres/mycelium_Running.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/mycelium_Running.jpeg" alt="image ecran 4">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-7" class="carrousel_ecran">
+                                <a href="/fr/oeuvres/Österreich_Tisch.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/Österreich_Tisch.jpeg" alt="image ecran 4">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div id="ecran-8" class="carrousel_ecran">
+                                <a href="/fr/oeuvres/sieben_Anrufungen.html">
+                                    <figure>
+                                        <img class="carrousel__img" src="/public/img/sieben_Anrufungen.jpeg" alt="image ecran 4">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+            </carrousel>
         </section>
 
         <footer class="footer">
